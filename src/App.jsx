@@ -11,9 +11,9 @@ function App() {
  
 
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 w-full flex-col">
       <Aside></Aside>
-      <Section_big data={data}></Section_big>
+   { /*  <Section_big data={data}></Section_big>*/}
     </div>
   );
 }

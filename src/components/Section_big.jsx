@@ -7,10 +7,12 @@ import View_skills from "../Views/View_skills";
 import View_xp from "../Views/View_xp";
 import View_edc from "../Views/View_edc";
 import View_contact from "../Views/View_contact";
-
+import PropTypes from 'prop-types';
 
 
 export default function Section_big({data}) {
+  console.log(data);
+  
 
 const [clickNav,setClickNav]=useState(0)
 
@@ -38,33 +40,35 @@ return arr[clickNav]
       duration: 0.4,
       scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
     }}
-    className=" relative bg-[#242424] p-3 w-[800px] rounded-[20px] border border-neutral-600 overflow-hidden ">
+    className=" relative bg-[#242424] sm:w-[800px] rounded-[20px] border border-neutral-600 flex flex-col gap-3 ">
+<div className='flex h-[50px]  justify-end  '>
 
-      <ul className="font-bold w-fit h-fit rounded-tr-[20px] rounded-bl-[20px]   flex  bg-neutral-600 absolute right-0 top-0">
-        <li onClick={()=>{handlerClick(0)}} className="px-4 p-3  hover:bg-[#1a1a1a] rounded-bl-[20px] cursor-pointer hover:text-yellow-200">
+<ul className="font-bold w-fit margin-auto h-fitrounded-tr-[20px] rounded-bl-[20px] rounded-tr-[20px]  flex  bg-neutral-600 ">
+        <li onClick={()=>{handlerClick(0)}} className="px-4 p-3  hover:bg-[#1a1a1a] rounded-bl-[20px] cursor-pointer hover:text-yellow-200 hover:scale-105 active:scale-95">
           Acerca de mí
         </li>
-        <li onClick={()=>{handlerClick(1)}} className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 ">
+        <li onClick={()=>{handlerClick(1)}} className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 hover:scale-105 active:scale-95 transition-all duration-75 ease-in-out">
           Proyectos
         </li>
-        <li onClick={()=>{handlerClick(2)}} className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 ">
+        <li onClick={()=>{handlerClick(2)}} className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 hover:scale-105 active:scale-95">
           Habilidades
         </li>
-        <li onClick={()=>{handlerClick(3)}} className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 ">
+        <li onClick={()=>{handlerClick(3)}} className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 hover:scale-105 active:scale-95">
           Experiencia
         </li>
-        <li onClick={()=>{handlerClick(4)}}  className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 ">
+        <li onClick={()=>{handlerClick(4)}}  className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 hover:scale-105 active:scale-95">
           Educación
         </li>
-        <li onClick={()=>{handlerClick(5)}} className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 rounded-tr-[20px] ">
+        <li onClick={()=>{handlerClick(5)}} className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 rounded-tr-[20px] hover:scale-105 active:scale-95">
           Contacto
         </li>
       </ul>
+</div>
 
-      <div className=" flex  flex-col mt-14  mb-0 justify-center ">
-        <div className='h-full overflow-y-hidden'>
+      <div className=" flex h-[570px]  flex-col justify-center  ">
+       
             <RenderSection></RenderSection>
-        </div>
+  
     
      
       </div>
@@ -74,3 +78,10 @@ return arr[clickNav]
     </motion.section>
   );
 }
+
+
+
+Section_big.propTypes = {
+  data: PropTypes.array, 
+};
+

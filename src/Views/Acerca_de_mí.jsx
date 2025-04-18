@@ -5,7 +5,7 @@ export default function Acerca_de_mi() {
         Acerca de mí
       </p>
 
-      <p className="text-neutral-400 text-center m-auto p-14 leading-9">
+      <p className="text-neutral-400 text-center m-auto p-14 pt-0 leading-9">
         Trabajo en equipo, proactivo y creyente que los desarrollos web,etc
         deben de resolver la totalidad del problema, el cuál motivó su
         desarrollo. <br></br>
