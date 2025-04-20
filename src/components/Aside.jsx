@@ -15,18 +15,17 @@ export default function Aside() {
         duration: 0.4,
         scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
       }}
-      className={`flex flex-col min-w-[300px] w-full divide-y-2divide-neutral-700 border border-neutral-600  p-2 rounded-[20px] sm:w-72 h-fit shadow-md bg-[#242424] `}
+      className={`flex flex-col min-w-[300px] w-full divide-y-2 divide-neutral-700 border border-neutral-600  p-2 rounded-[20px] sm:w-72 h-fit shadow-md bg-[#242424] mb-8 md:h-[634px] md:mb-0`}
     >
       <div className=" flex flex-col justify-center items-center">
         <div className="flex w-full justify-end mb-3 items-center">
           <div className="flex flex-row-reverse  gap-3 ">
             <img
-              className="w-10 h-10  m-auto  sm:w-32 sm:h-32 mx-auto rounded-full border-4 border-neutral-700"
+              className="w-10 h-10  m-auto  md:w-15 md:h-15 mx-auto rounded-full border-4 border-neutral-700"
               src={logo_profile}
               alt=""
             />
-
-            <h2 className="text-md font-bold sm:text-3xl my-6">
+            <h2 className="text-md font-bold md:text-2xl my-6">
               Kevin Arizaga
             </h2>
           </div>

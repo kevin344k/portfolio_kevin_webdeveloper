@@ -9,14 +9,14 @@ export default function View_skills() {
       duration: 0.4,
       scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
     }}
-    className=" h-full flex flex-col justify-start mt-4 items-center px-3  border border-neutral-600   rounded-[20px] sm:w-72 shadow-md bg-[#242424]">
+    className=" h-full flex flex-col justify-start mt-4 items-center px-3  border border-neutral-600   rounded-[20px] sm:w-72 shadow-md bg-[#242424] md:w-full md:border-none md:mt-0 md:px-4">
         <div className="flex flex-col items-left gap-2 mb-8 mt-5 w-full">
        <p className="text-xl text-left font-bold">Habilidades</p>
        <div className="w-26 h-1 bg-yellow-500 "></div>
        </div>
       <div className="w-full">
        <div className="flex flex-col items-center gap-2 mb-8">
-       <p className="tracking-wider text-xl font-bold">Frontend:</p>
+       <p className="tracking-wider text-xl ">Frontend:</p>
      
        </div>
         <div className=" w-full flex  flex-wrap items-center gap-12 bg-neutral-50 rounded-md justify-center py-2">

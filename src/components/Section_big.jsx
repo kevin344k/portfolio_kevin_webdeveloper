@@ -32,6 +32,31 @@ export default function Section_big({ data }) {
     return arr[clickNav];
   };
 
+
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+  const item = {
+ 
+ 
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+   
+   
+  };
+ 
+
   return (
     <>
       <motion.section
@@ -41,7 +66,7 @@ export default function Section_big({ data }) {
           duration: 0.4,
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
         }}
-        className="hidden relative bg-[#242424] sm:w-[800px] rounded-[20px] border border-neutral-600 sm:flex flex-col gap-3 overflow-hidden"
+        className="hidden relative bg-[#242424] md:w-[800px] md:flex rounded-[20px] border border-neutral-600  flex-col gap-3  "
       >
         <div className="flex h-[50px]  justify-end  ">
           <ul className="hidden sm:flex font-bold w-fit margin-auto h-fitrounded-tr-[20px] rounded-bl-[20px] rounded-tr-[20px]  bg-neutral-600 ">
@@ -49,7 +74,7 @@ export default function Section_big({ data }) {
               onClick={() => {
                 handlerClick(0);
               }}
-              className="px-4 p-3  hover:bg-[#1a1a1a] rounded-bl-[20px] cursor-pointer hover:text-yellow-200 hover:scale-105 active:scale-95"
+              className="px-4 p-3  hover:bg-[#1a1a1a] rounded-bl-[20px] cursor-pointer hover:text-yellow-200 hover:scale-105 active:scale-95 focus:bg-red-500"
             >
               Acerca de mí
             </li>
@@ -57,7 +82,7 @@ export default function Section_big({ data }) {
               onClick={() => {
                 handlerClick(1);
               }}
-              className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 hover:scale-105 active:scale-95 transition-all duration-75 ease-in-out"
+              className="p-3 hover:bg-[#1a1a1a] cursor-pointer  hover:text-yellow-200 hover:scale-105 active:scale-95 transition-all duration-75 ease-in-out "
             >
               Proyectos
             </li>
@@ -96,21 +121,21 @@ export default function Section_big({ data }) {
           </ul>
         </div>
 
-        <div className="hidden sm:flex h-[570px]  flex-col justify-center  ">
+        <div className="hidden  h-[570px] md:flex flex-col md:flex-row justify-center  ">
           <RenderSection></RenderSection>
         </div>
 
       </motion.section>
          {/*Codigo mobile */}
-         <div className="flex flex-col gap-8">
-          <Acerca_de_mí key={1} />
-          <View_proy key={2} data={data}></View_proy>
-          <View_skills key={3}></View_skills>
+         <motion.div variants={container} initial="hidden" animate="visible" className="flex flex-col gap-8 md:hidden">
+          <Acerca_de_mí variants={item} key={1} />
+          <View_proy variants={item} key={2} data={data}></View_proy>
+          <View_skills variants={item} key={3}></View_skills>
        
-          <View_edc key={5}></View_edc>
+          <View_edc variants={item} key={5}></View_edc>
 
        
-        </div>
+        </motion.div>
         {/**Codigo mobile fin */}
     </>
   );

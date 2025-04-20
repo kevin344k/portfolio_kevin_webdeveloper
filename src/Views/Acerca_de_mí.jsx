@@ -1,7 +1,7 @@
 export default function Acerca_de_mi() {
   return (
-    <div className="border border-neutral-600 flex flex-col items-center justify-center p-2 rounded-[20px] sm:w-72 h-fit shadow-md bg-[#242424] ">
-      <p className="text-center sm:text-left  sm:text-3xl ml-5 py-2 px-0 font-bold border-b-4 border-yellow-500 w-fit m-2">
+    <div className="border border-neutral-600 flex flex-col items-center justify-center p-2 rounded-[20px] sm:w-72 md:w-ull h-fit shadow-md bg-[#242424] md:border-none md:w-full">
+      <p className="text-center sm:text-left  sm:text-3xl ml-5 py-2 px-0 font-bold border-b-4 border-yellow-500 w-fit m-2 md:text-xl">
         Acerca de mí
       </p>
 

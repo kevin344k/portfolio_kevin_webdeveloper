@@ -13,7 +13,7 @@ import cisco from "../assets/pdf/TI_ESSENTIALS-certificate.pdf";
 
 export default function View_edc() {
   return (
-    <div className="border border-neutral-600  p-2 rounded-[20px] sm:w-72 h-fit shadow-md bg-[#242424] ">
+    <div className="border border-neutral-600  p-2 rounded-[20px] sm:w-72 h-fit shadow-md bg-[#242424] md:border-none md:w-full md:overflow-y-scroll md:h-full md:px-4">
          <div className="flex flex-col items-left gap-2 mb-8 mt-5 w-full">
        <p className="text-xl text-left font-bold">Formación</p>
        <div className="w-26 h-1 bg-yellow-500 "></div>
