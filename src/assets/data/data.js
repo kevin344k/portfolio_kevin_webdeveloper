@@ -47,6 +47,19 @@ const data=[
         preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_300/Challenges/ciqydc29txwqcf2vncia.jpg',
         type:'WEB',
     },
+ {
+        name:'Social media dashboard with theme switcher',
+        url:'https://kevin344k.github.io/social-media-dashboard-with-theme-switcher-master/',
+        preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/ftdvklbtn6y7ydjxjjuj.jpg',
+        type:'WEB',
+    },
+     {
+        name:'Digital bank landing page',
+        url:'https://kevin344k.github.io/easybank-landing-page-master/',
+        preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/yezt1f56cfp2njnakpbo.jpg',
+        type:'WEB',
+    },
+
 
 
 

@@ -1,8 +1,8 @@
-import logo_profile from "../assets/peakpx.jpg";
+import logo_profile from "../assets/profile-image-kevin.jpeg";
 import { IoMailOutline } from "react-icons/io5";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { motion } from "motion/react";
-
+import { FaGithub } from "react-icons/fa";
 
 
 export default function Aside() {
@@ -21,7 +21,7 @@ export default function Aside() {
         <div className="flex w-full justify-end mb-3 items-center">
           <div className="flex flex-row-reverse  gap-3 ">
             <img
-              className="w-10 h-10  m-auto  md:w-15 md:h-15 mx-auto rounded-full border-4 border-neutral-700"
+              className="w-8 h-14  m-auto  md:w-15 md:h-15 mx-auto rounded-full border-4 border-neutral-700"
               src={logo_profile}
               alt=""
             />
@@ -46,25 +46,25 @@ export default function Aside() {
         className={`
           flex flex-col justify-center items-center`}
       >
-        <div className="flex w-[200px] gap-3 my-4">
-          <IoMailOutline className="my-auto" size={25} />
-          <div className="text-left">
-            <span className=" text-neutral-400 ">Correo</span>
-            <p>kevin344k@gmail.com</p>
+        <div className="flex justify-start items-center w-[200px] gap-3 my-4">
+          <IoMailOutline className="my-auto self-stretch" size={25} />
+          <div className="text-left flex flex-col">
+            <span className=" text-neutral-400 ">Email</span>
+            <a href="mailto:kevin.arizaga2002@gmail.com" className="truncate w-36 hover:text-yellow-200">kevin.arizaga2002@gmail.com</a>
           </div>
         </div>
         <div className="flex w-[200px] gap-3 my-4">
           <IoIosPhonePortrait className="my-auto" size={25} />
-          <div className="text-left">
+          <div className="text-left flex flex-col">
             <span className=" text-neutral-400">Celular</span>
-            <p>+593 999312678</p>
+            <a href="https://wa.link/2yo8eg" className="hover:text-yellow-200" > +593 999312678</a>
           </div>
         </div>
         <div className="flex w-[200px] gap-3  my-4">
-          <IoMailOutline className="my-auto" size={25} />
-          <div className="text-left">
-            <span className=" text-neutral-400">Correo</span>
-            <p>kevin344.com</p>
+          <FaGithub size={25}/>
+          <div className="text-left flex flex-col" >
+            <span className=" text-neutral-400">Github</span>
+            <a className="hover:text-yellow-200" href="https://github.com/kevin344k">kevin344k</a>
           </div>
         </div>
       </div>
