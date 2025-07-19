@@ -4,9 +4,7 @@ import { IoIosPhonePortrait } from "react-icons/io";
 import { motion } from "motion/react";
 import { FaGithub } from "react-icons/fa";
 
-
 export default function Aside() {
-
   return (
     <motion.aside
       initial={{ opacity: 0, x: -200, escale: 0.7 }}
@@ -29,11 +27,8 @@ export default function Aside() {
               Kevin Arizaga
             </h2>
           </div>
-    
         </div>
-        <div
-          className={` flex flex-col w-full sm:flex-col gap-4 mb-4`}
-        >
+        <div className={` flex flex-col w-full sm:flex-col gap-4 mb-4`}>
           <span className="w-full  px-6 py-2 mx-auto bg-[#1a1a1a] rounded-md">
             Web Developer
           </span>
@@ -50,21 +45,42 @@ export default function Aside() {
           <IoMailOutline className="my-auto self-stretch" size={25} />
           <div className="text-left flex flex-col">
             <span className=" text-neutral-400 ">Email</span>
-            <a href="mailto:kevin.arizaga2002@gmail.com" className="truncate w-36 hover:text-yellow-200">kevin.arizaga2002@gmail.com</a>
+            <a
+              href="mailto:kevin.arizaga2002@gmail.com"
+              className="truncate w-36 hover:text-yellow-200"
+            >
+              kevin.arizaga2002@gmail.com
+            </a>
           </div>
         </div>
         <div className="flex w-[200px] gap-3 my-4">
           <IoIosPhonePortrait className="my-auto" size={25} />
           <div className="text-left flex flex-col">
             <span className=" text-neutral-400">Celular</span>
-            <a href="https://wa.link/2yo8eg" className="hover:text-yellow-200" > +593 999312678</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="
+https://wa.me/593999312678
+
+"
+              className="hover:text-yellow-200"
+            >
+              {" "}
+              +593 999312678
+            </a>
           </div>
         </div>
         <div className="flex w-[200px] gap-3  my-4">
-          <FaGithub size={25}/>
-          <div className="text-left flex flex-col" >
+          <FaGithub size={25} />
+          <div className="text-left flex flex-col">
             <span className=" text-neutral-400">Github</span>
-            <a className="hover:text-yellow-200" href="https://github.com/kevin344k">kevin344k</a>
+            <a
+              className="hover:text-yellow-200"
+              href="https://github.com/kevin344k"
+            >
+              kevin344k
+            </a>
           </div>
         </div>
       </div>

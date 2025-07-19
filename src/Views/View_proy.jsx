@@ -33,7 +33,7 @@ console.log(data);
       <div className="flex  w-full  h-full  gap-4  p-10   pl-5  overflow-x-scroll snap-center snap-x snap-mandatory md:flex-wrap md:p-0 md:overflow-x-visible md:justify-center ">
       {
       data.map((item,index)=>(
-        <div key={index} className='w-72 h-76   md:w-55  flex-none p-3 font-light  rounded-lg shadow-md bg-neutral-50 sm:w-[240px] sm:h-[298px] shadow-neutral-500 hover:scale-105 transition ease-in-out '>
+        <div key={index} className='w-50 h-74   md:w-55  flex-none p-3 font-light  rounded-lg shadow-md bg-neutral-50 sm:w-[240px] sm:h-[298px] shadow-neutral-500 hover:scale-105 transition ease-in-out '>
         <img className="w-48 h-48 mx-auto" src={item.preview}></img>
         <div>
           <p className="mb-5 text-neutral-800 truncate">{item.name}</p>

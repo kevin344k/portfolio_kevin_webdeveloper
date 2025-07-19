@@ -5,6 +5,12 @@ const data=[
         preview:'https://www.jjchagerben.com/imagenes/jjcara.webp',
         type:'WEB',
     },
+     {
+        name:'Product list with cart',
+        url:'https://kevin344k.github.io/product-list-with-cart/',
+        preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/hnwdoqpec5hxujjl1nj7.jpg',
+        type:'WEB',
+    },
     {
         name:'Responsive slider testimonial',
         url:'https://kevin344k.github.io/coding-bootcamp-testimonials-slider-master/',
@@ -61,6 +67,20 @@ const data=[
     },
 
 
+    {
+        name:'Manage landing page',
+        url:'https://kevin344k.github.io/manage-landing-page-master/',
+        preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/qkpgcsmter7tah2sjdij.jpg',
+        type:'WEB',
+    },
+
+
+    {
+        name:'Tip calculator app',
+        url:'https://kevin344k.github.io/tip-calculator-app/',
+        preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/hxkpctp6cd1meeytfdl2.jpg',
+        type:'WEB',
+    },
 
 
 
