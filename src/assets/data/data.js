@@ -6,6 +6,18 @@ const data=[
         type:'WEB',
     },
      {
+        name:'Bookmark landing page',
+        url:'https://kevin344k.github.io/bookmark-landing-page-master/',
+        preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/nmfs59ofpjizo6knhpsr.jpg',
+        type:'WEB',
+    },
+     {
+        name:'GPS SYSTEM',
+        url:'https://gpssystem.vercel.app/',
+        preview:'https://gpssystem.vercel.app/assets/logo_horizontal-VodfW-u9.png',
+        type:'WEB',
+    },
+     {
         name:'Product list with cart',
         url:'https://kevin344k.github.io/product-list-with-cart/',
         preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/hnwdoqpec5hxujjl1nj7.jpg',
