@@ -5,17 +5,12 @@ export default function Acerca_de_mi() {
         Acerca de mí
       </p>
 
-      <p className="text-left p-2 text-neutral-400 sm:text-center m-auto sm:p-14 pt-0 leading-9">
-        Trabajo en equipo, proactivo y creyente que los desarrollos web,etc
-        deben de resolver la totalidad del problema, el cuál motivó su
-        desarrollo. <br></br>
-        Me dedico al desarollo de sofware (especialmente web) por las
-        facilidades que el mundo actual nos da, al permitir moldear las ideas y
-        plasmarlas en código. <br />
-        Apoyo la moción de que la automatización de procesos usando la
-        tecnología permite capitalizarce más rápido y mejor, al permitir ser más
-        productivos y más eficientes.
-      </p>
+    <p className="text-left p-2 text-neutral-400 sm:text-center m-auto sm:p-14 pt-0 leading-9">
+  Soy proactivo, trabajo en equipo  <br />
+  Me especializo en desarrollo de software, especialmente web, porque permite transformar ideas en soluciones reales de forma mas eficiente. <br />
+  Creo firmemente en la automatización como una vía para ser más productivos y eficientes, acelerando el crecimiento.
+</p>
+
     </div>
   );
 }

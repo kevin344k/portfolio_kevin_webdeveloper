@@ -19,7 +19,7 @@ export default function Aside() {
         <div className="flex w-full justify-end mb-3 items-center">
           <div className="flex flex-row-reverse  gap-3 ">
             <img
-              className="w-8 h-14 object-contain m-auto  md:w-15 md:h-15 mx-auto rounded-full border-4 border-neutral-700"
+              className="w-12 h-12 bg-cover bg-center m-auto  md:w-15 md:h-15 mx-auto rounded-full border-4 border-neutral-700"
               src={logo_profile}
               alt=""
             />
