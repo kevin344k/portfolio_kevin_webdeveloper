@@ -15,20 +15,23 @@ export default function View_edc() {
   return (
     <div className="border border-neutral-600  p-2 rounded-[20px] sm:w-72 h-fit shadow-md bg-[#242424] md:border-none md:w-full md:overflow-y-scroll md:h-full md:px-4">
          <div className="flex flex-col items-left gap-2 mb-8 mt-5 w-full">
-       <p className="text-xl text-left font-bold">Formación</p>
+       <p className="text-xl text-left font-bold">Educación</p>
        <div className="w-26 h-1 bg-yellow-500 "></div>
        </div>
        <div className="flex flex-col">
-        <p className="my-4">Instituto Tecnológico Bolivariano</p>
+        <p className="my-4">ITB/UBE</p>
         <div className="flex flex-wrap gap-4 justify-center items-center">
           <a className="bg-yellow-700 rounded-md p-3 " href={titulo}>
           TECNOLOGO EN ANALISIS DE SISTEMAS
+          </a>
+             <a className="bg-yellow-700 rounded-md p-3 " >
+          ING. SISTEMAS INTELIGENTES (EN CURSO)
           </a>
         
         </div>
       </div>
       <div className="flex flex-col">
-        <p className="my-4">Platzi</p>
+        <p className="my-4">Platzi (<a className="text-yellow-500" href="https://platzi.com/p/kevin344k/">ver las 30 certificaciones en Platzi</a>) </p>
         <div className="flex flex-wrap gap-4 justify-start items-center">
           <a className="bg-yellow-700 rounded-md p-3 " href={asesor}>
             Asesor de infraestructura en la nube
@@ -52,6 +55,9 @@ export default function View_edc() {
 
           <a className="bg-yellow-700 rounded-md p-3 " href={socket}>
             Aplicaciones en tiempo real con Socket.io
+          </a>
+             <a className="bg-yellow-700 rounded-md p-3 " href="https://platzi.com/p/kevin344k/">
+            ver todo...
           </a>
         </div>
       </div>
