@@ -7,13 +7,13 @@ const data=[
     },
      {
         name:'Product list with cart',
-        url:'https://kevin344k.github.io/product-list-with-cart/',
+        url:'https://product-list-with-cart-navy-sigma.vercel.app/',
         preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/hnwdoqpec5hxujjl1nj7.jpg',
         type:'WEB',
     },
     {
         name:'Responsive slider testimonial',
-        url:'https://kevin344k.github.io/coding-bootcamp-testimonials-slider-master/',
+        url:'https://coding-bootcamp-testimonials-slider-pi-two.vercel.app/',
         preview:'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_300/Challenges/ajxwviujv7lrjghuhdxs.jpg',
         type:'WEB',
     },
